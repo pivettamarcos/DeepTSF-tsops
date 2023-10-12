@@ -199,7 +199,7 @@ async def get_model_names(resolution: int, multiple: bool):
         {"name": "model", "type": "str", "description": "Number of recurrent layers", 'range': ['RNN', 'LSTM', 'GRU'], 'default': 'LSTM'},
         {"name": "n_rnn_layers", "type": "int", "description": "Number of recurrent layers", 'min': 1, 'max': 5, 'default': 1},
         {"name": "hidden_dim", "type": "int", "description": "Hidden dimension size within each RNN layer", 'min': 1, 'max': 512, 'default': 8},
-        {"name": "learning rate", "type": "float", "description": "Learning rate", 'min': 0.000000001, 'max': 1, 'default': 0.0008},
+        # {"name": "learning rate", "type": "float", "description": "Learning rate", 'min': 0.000000001, 'max': 1, 'default': 0.0008},
         {"name": "dropout", "type": "float", "description": "Fraction of neurons affected by dropout", 'min': 0, 'max': 1, 'default': 0.0},
         {"name": "n_epochs", "type": "int", "description": "Epochs threshold", 'min': 0, 'max': 100, 'default': 700},
         {"name": "random_state", "type": "int", "description": "Randomness of neural weight initialization", 'min': 0, 'max': 10000, 'default': 42},
