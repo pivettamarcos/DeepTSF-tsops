@@ -1,3 +1,4 @@
+# Backend
 .DS_Store
 .huskyrc.json
 out
@@ -48,15 +49,39 @@ nodeLanguageServer.*/**
 .mlruns
 */mlruns/*
 
-# darts
+## darts
 */darts_logs/*
 **/darts_logs
 
-# ignore dots except gitignore
+## ignore dots except gitignore
 .*
 !/.gitignore
 !/.gitattributes
 !.env_example
 
-# optuna storage
+## optuna storage
 *.db
+
+# Front end
+
+## dependencies
+load-forecasting-dashboard/node_modules
+load-forecasting-dashboard/.pnp
+load-forecasting-dashboard/.pnp.js
+
+## testing
+load-forecasting-dashboard/coverage
+
+## production
+load-forecasting-dashboard/build
+
+## misc
+load-forecasting-dashboard/.DS_Store
+load-forecasting-dashboard/.env.local
+load-forecasting-dashboard/.env.development.local
+load-forecasting-dashboard/.env.test.local
+load-forecasting-dashboard/.env.production.local
+
+load-forecasting-dashboard/npm-debug.log*
+load-forecasting-dashboard/yarn-debug.log*
+load-forecasting-dashboard/yarn-error.log*
